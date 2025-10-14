@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Teacher</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header>
+    <h1>Add New Teacher</h1>
+</header>
+
+<div class="container">
+    <form th:action="@{/teachers/add}" th:object="${teacher}" method="post">
+        <label>Name:</label>
+        <input type="text" th:field="*{name}" required>
+
+        <label>Subject:</label>
+        <input type="text" th:field="*{subject}" required>
+
+        <label>Experience (years):</label>
+        <input type="number" th:field="*{experience}" required>
+
+        <button type="submit">Add Teacher</button>
+    </form>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a href="/teachers/">🏠 Back to Home</a>
+    </div>
+</div>
+
+<footer>
+    © 2025 AnnganWadi | Designed by Jay Sharma
+</footer>
+
+</body>
+</html>

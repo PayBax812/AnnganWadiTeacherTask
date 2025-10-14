@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Teacher Management</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+<body>
+<h1>Welcome to Teacher Management System</h1>
+
+<div th:if="${message}">
+    <h3 th:text="${message}" style="color:green;"></h3>
+</div>
+
+<a href="/teachers/add">Add New Teacher</a><br><br>
+<a href="/teachers/list">View All Teachers</a>
+</body>
+</html>

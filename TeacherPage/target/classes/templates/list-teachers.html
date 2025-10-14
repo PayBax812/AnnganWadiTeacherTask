@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Teachers</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header>
+    <h1>All Registered Teachers</h1>
+</header>
+
+<div class="container">
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Experience</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="teacher : ${teachers}">
+            <td th:text="${teacher.id}"></td>
+            <td th:text="${teacher.name}"></td>
+            <td th:text="${teacher.subject}"></td>
+            <td th:text="${teacher.experience}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a href="/teachers/">🏠 Back to Home</a>
+    </div>
+</div>
+
+<footer>
+    © 2025 AnnganWadi | Designed by Jay Sharma
+</footer>
+
+</body>
+</html>

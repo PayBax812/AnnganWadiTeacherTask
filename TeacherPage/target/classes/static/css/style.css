@@ -1,0 +1,167 @@
+/* ====== GLOBAL STYLES ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+    color: #e0e0e0;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+/* ====== HEADER ====== */
+header {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 28px;
+    color: #00d4ff;
+    text-shadow: 0 0 15px #00d4ff;
+    letter-spacing: 1px;
+}
+
+/* ====== CONTAINER ====== */
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 50px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ====== TITLES ====== */
+h2 {
+    color: #00d4ff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ====== BUTTONS ====== */
+button, .btn {
+    background: linear-gradient(135deg, #00d4ff, #007bff);
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+button:hover, .btn:hover {
+    background: linear-gradient(135deg, #00aaff, #0056b3);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    transform: scale(1.05);
+}
+
+/* ====== LINKS ====== */
+a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #66ffff;
+    text-shadow: 0 0 10px #00d4ff;
+}
+
+/* ====== FORMS ====== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="number"] {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00d4ff;
+    box-shadow: 0 0 8px #00d4ff;
+}
+
+/* ====== TABLE ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    color: #e0e0e0;
+}
+
+table th, table td {
+    padding: 14px;
+    text-align: center;
+}
+
+table th {
+    background: linear-gradient(135deg, #00d4ff, #007bff);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+table tr:hover {
+    background: rgba(0, 212, 255, 0.1);
+    transition: 0.3s;
+}
+
+/* ====== MESSAGE ====== */
+.message {
+    text-align: center;
+    background: rgba(0, 255, 100, 0.15);
+    color: #00ff90;
+    border: 1px solid #00d477;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 255, 150, 0.2);
+}
+
+/* ====== FOOTER ====== */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px;
+    color: #ccc;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
